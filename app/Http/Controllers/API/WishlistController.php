@@ -7,14 +7,14 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\Wishlist;
 use App\Http\Resources\WishlistResource;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class WishlistController extends Controller
 {
     public function AddToWishlist(Request $request, $product_id)
     {
         $matchQuery=['user_id'=>$request->user_id,'product_id'=>$product_id];
-        $wishItems=Wishlist::where($matchQuery)->get();
+        $wishItems=DB::table('wishlists')->where($matchQuery)->get();
         if(count($wishItems)>0){
             return response()->json([
                 'status' => 200,

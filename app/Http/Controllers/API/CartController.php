@@ -8,7 +8,7 @@ use App\Models\Wishlist;
 use Illuminate\Http\Request;
 use App\Models\Cart;
 use App\Http\Resources\CartResource;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class CartController extends Controller
 {
