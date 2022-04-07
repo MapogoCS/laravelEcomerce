@@ -79,7 +79,7 @@
     <div class="container">
         
         <h1>Team Members : 
-            <span class="txt-type" data-wait="3000" data-words='["Hebatallah Ibrahim", "mostafa Ibrahim", "mahmoud hossan"]'></span>
+            <span class="txt-type" data-wait="3000" data-words='["Hebatallah Ibrahim", "mostafa Ibrahim ","mahmoud hossan","Nada Usama ","Nourhan Ahmed"]'></span>
         </h1>
         <h2>Welcome To My Website</h2>
     </div>
