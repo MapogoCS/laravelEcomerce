@@ -26,6 +26,20 @@ class AllUserController extends Controller
                 'message' => 'OrderItems not already exits'
             ]);
         }
+        /*$order = Order::with('user')->where('id', $order_id)->get();
+        $order_item = OrderItem::with('product')->where('order_id', $order_id)->orderBy('id', 'DESC')->get();
+
+        if ($order_item) {
+            return response()->json([
+                'status' => 200,
+                'message' => 'OrderItems already exits'
+            ]);
+        } else {
+            return response()->json([
+                'status' => 200,
+                'message' => 'OrderItems not already exits'
+            ]);
+        } */
     }
 
     public function DetailsOrder($id)

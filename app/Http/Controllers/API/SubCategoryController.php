@@ -123,7 +123,7 @@ class SubCategoryController extends Controller
         }else{
             return response()->json([
                 'status'=>422,
-                'errors'=> $validator->messages()
+                'errors'=> ' not success'
             ]);
         }
     }
